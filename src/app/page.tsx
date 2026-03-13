@@ -61,7 +61,7 @@ export default function HomePage() {
   };
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto", padding: 24 }}>
+    <div style={{ padding: 24 }}>
       <header
         style={{
           display: "flex",

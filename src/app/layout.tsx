@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Site Management Admin",
@@ -12,17 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        style={{
-          margin: 0,
-          fontFamily:
-            'ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
-          background: "#0b1020",
-          color: "#e8eaf0",
-        }}
-      >
-        {children}
-      </body>
+      <body className="app-root">{children}</body>
     </html>
   );
 }
